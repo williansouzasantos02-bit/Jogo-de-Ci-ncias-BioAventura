@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BioAventura: Missão Corpo Humano</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>🧬 BioAventura</h1>
+        <p>Missão: Corpo Humano!</p>
+    </header>
+
+    <main>
+        <!-- TELA INICIAL -->
+        <section id="tela-inicial" class="card-jogo">
+            <h2>Bem-vindo, Jovem Cientista!</h2>
+            <p>Você está pronto para testar seus conhecimentos sobre o funcionamento do nosso corpo? Responda às perguntas e conquiste todos os pontos!</p>
+            <button id="btn-iniciar" class="btn-principal">Começar Missão 🚀</button>
+        </section>
+
+        <!-- TELA DO JOGO -->
+        <section id="tela-jogo" class="card-jogo escondido">
+            <div class="status-jogo">
+                <span id="contador-perguntas">Pergunta: 1/5</span>
+                <span id="placar-pontos">Pontos: 0</span>
+            </div>
+            
+            <div class="progresso-barra">
+                <div id="barra-preenchimento"></div>
+            </div>
+
+            <div id="container-pergunta">
+                <h3 id="texto-pergunta">Carregando pergunta...</h3>
+            </div>
+
+            <div id="container-alternativas" class="grade-alternativas">
+                <!-- As alternativas serão geradas via JavaScript -->
+            </div>
+
+            <div id="feedback" class="escondido">
+                <p id="texto-feedback"></p>
+                <button id="btn-proxima" class="btn-principal">Próxima Pergunta ➡️</button>
+            </div>
+        </section>
+
+        <!-- TELA FINAL -->
+        <section id="tela-final" class="card-jogo escondido">
+            <h2>Missão Concluída! 🏆</h2>
+            <p id="mensagem-final">Você fez um ótimo trabalho estudando o corpo humano!</p>
+            <div class="pontuacao-final">
+                <p>Sua pontuação:</p>
+                <span id="total-pontos">0</span> pontos
+            </div>
+            <button id="btn-reiniciar" class="btn-principal">Jogar Novamente 🔄</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Desenvolvido para fins educativos • 6º Ano do Ensino Fundamental</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
